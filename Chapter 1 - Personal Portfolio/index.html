@@ -1,21 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Student Portfolio</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css" >
 </head>
 <body>
-    <div>
-        <div>Home</div>
-        <div>Education</div>
-        <div>Research</div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <nav class="header">
+        <ul class="header_list">
+            <li class="header_item1">Introduction</li>
+            <li class="header_item2">Education</li>
+            <li class="header_item3">Research</li>
+            <li class="header_item4">Experience</li>
+            <li class="header_item5">Projects</li>
+            <li class="header_item6">Seen Science</li>
+            <li class="header_item7">Unseen Science</li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <img class="section_image" src="Section Files/programmer.svg" alt="Programmer">
+        <div class="section_ul">
+            <p>Name: Mostafizur Rahaman</p>
+            <p>Lecturer, Dept. of ESE, KUET</p>
+            <p>&#x2709; <a href="mailto:mostafiz@ese.kuet.ac.bd">mostafiz@ese.kuet.ac.bd</a></p>
+            <p>Phone:  <a href="tel:+8801903767842">+880 1903-767842</a></p>
+        </div>
+
+        <ul class="social-links">
+            <li>
+                <a href="https://github.com/Mostafiz-1613012" target="_blank" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.07 3.29 9.36 7.86 10.87.58.11.77-.25.77-.55 0-.27-.01-1.03-.01-2.02-3.19.7-3.87-1.44-3.87-1.44-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.39.97.1-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.44.11-3.01 0 0 .97-.31 3.18 1.18A11.08 11.08 0 0112 6.09c.98.01 1.97.13 2.9.39 2.21-1.5 3.18-1.18 3.18-1.18.63 1.57.23 2.72.11 3.01.74.81 1.19 1.84 1.19 3.1 0 4.43-2.68 5.4-5.23 5.69.43.37.81 1.1.81 2.22 0 1.6-.01 2.88-.01 3.27 0 .3.2.66.78.55A10.999 10.999 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/mostafizur-rahaman-0805b6316/" target="_blank" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M6.94 3.5A2.44 2.44 0 014.5 5.94a2.44 2.44 0 012.44-2.44zm0 1.2a1.24 1.24 0 100 2.49 1.24 1.24 0 000-2.49zM5.6 8.15h2.68v9.95H5.6V8.15zm6.02 0H9.22v9.95h2.39v-5.05c0-1.38.26-2.6 1.88-2.6 1.59 0 1.61 1.49 1.61 2.68v5h2.38v-5.35c0-2.46-.52-4.35-3.22-4.35-1.43 0-2.39.68-2.79 1.43h-.03v-.01l.01.01V8.15zm8.78 13.24A11.98 11.98 0 0112 24C5.37 24 0 18.63 0 12S5.37 0 12 0c6.63 0 12 5.37 12 12 0 3.06-1.16 5.86-3.06 7.94l-.02.01a11.98 11.98 0 01-.42 1.43l-.05-.04z"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/your-phone-number" target="_blank" aria-label="WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.52 3.47A11.65 11.65 0 0012 0C5.39 0 .08 5.4.08 12c0 2.13.55 4.21 1.6 6.04L.04 24l6.18-1.63A11.87 11.87 0 0012 23.98c6.62 0 11.93-5.4 11.93-12S18.63.03 12.01.03zm-.94 16.57a9.6 9.6 0 01-10.67 2.2l-.77-.35-4.6 1.21 1.22-4.49-.4-.79a9.54 9.54 0 0114.97-11.4 9.5 9.5 0 01.25 12.6zm-1.52-2.66c-.19-.3-.7-.5-1.47-.87-.77-.37-.91-.59-1.56-.85-.66-.25-1.35-.13-1.79.25-.43.37-.72.9-1.35 1.02-.54.11-1.41-.29-2.01-.81a7.1 7.1 0 01-1.8-2.23c-.37-.64-.49-1.11-.38-1.45.12-.34.4-.57.74-.86.33-.3.37-.5.54-.84.18-.33.1-.67-.04-.94-.13-.27-.72-1.73-1.02-2.43-.27-.64-.55-.65-.78-.65-.2 0-.44.01-.67.01-.24 0-.64.09-.98.44-.34.36-1.3 1.27-1.3 3.1 0 1.82 1.33 3.57 1.51 3.82.18.25 2.61 4.17 6.34 4.91.88.19 1.57.16 2.15.1.65-.07 2-.81 2.28-1.58.29-.78.29-1.45.2-1.58z"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://facebook.com/your-profile" target="_blank" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22.68 0H1.32C.59 0 0 .59 0 1.32v21.36C0 23.41.59 24 1.32 24h11.54v-9.33H9.88v-3.64h2.98V8.35c0-2.95 1.8-4.56 4.43-4.56 1.26 0 2.34.09 2.65.13v3.07h-1.82c-1.42 0-1.7.68-1.7 1.67v2.2h3.42l-.45 3.64h-2.97V24h5.83c.73 0 1.32-.59 1.32-1.32V1.32C24 .59 23.41 0 22.68 0z"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:mostafiz@ese.kuet.ac.bd" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22 4H2c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM2 6h20l-10 7L2 6zm0 12V8.93l9.8 6.53L22 8.93V18H2z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+    <nav class="header2">
+        <div class="header2_item1">Introduction</div>
+        <div class="header2_item2">Education</div>
+        <div class="header2_item3">Research</div>
+        <div class="header2_item4">Experience</div>
+        <div class="header2_item5">Projects</div>
+        <div class="header2_item6">Seen Science</div>
+        <div class="header2_item7">Unseen Science</div>
+    </nav>
+
+
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="mySidebar_item1">Topic 1</div>
+        <div class="mySidebar_item2">Topic 2</div>
+        <div class="mySidebar_item3">Topic 3</div>
+        <div class="mySidebar_item4">Topic 4</div>
+        <div class="mySidebar_item5">Topic 5</div>
+        <div class="mySidebar_item6">Topic 6</div>
+        <div class="mySidebar_item7">Topic 7</div>
     </div>
+<!--     
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
+        <!-- Your main content goes here -->
+    </div> -->
+
 </body>
-</html>>
+</html>

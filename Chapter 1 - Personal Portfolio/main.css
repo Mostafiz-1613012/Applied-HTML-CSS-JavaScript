@@ -1,0 +1,279 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flexbox;
+}
+
+
+
+
+
+
+/* Header styles */
+.header {
+    background-color: #00ffc8;
+    padding: 0.5rem;
+}
+
+.header_list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.header_list li {
+    color: black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header_list li:hover {
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .header_list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_list li {
+        width: 100%;
+        text-align: center;
+        padding: .5rem;
+        border-bottom: 1px solid #444;
+    }
+
+    .header_list li:last-child {
+        border-bottom: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section {
+    display: flex;
+    flex-flow: row;
+    justify-content:space-around ;
+    background-color: #fbfbfba5;
+    padding: 1px;    
+}
+.section_ul {
+    align-content: center;
+    padding: 0px 50px 0px 50px;
+    text-align: center;
+}
+
+img {
+    width: 175px;
+}
+
+
+
+.social-links {
+    text-align: right;
+    list-style: none;
+    padding-left: 40px;
+    /* display: flex; */
+    gap: 15px; /* Adjust spacing as needed */
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: right;
+    color: #1057e4; /* Default color */
+    padding: 4px;
+}
+
+.social-links svg {
+    fill: currentColor; /* Inherit color from parent */
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover svg {
+    color: #000000; /* Change color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-shrink: 1;
+    background-color: #ce90c34a;
+    padding: 5px; /* Added padding for better spacing */
+}
+
+.header2 div {
+    flex: 1 1 150px; /* Flex-grow: 1, Flex-shrink: 1, Base width: 200px */
+    margin: 5px;
+    background-color: rgba(56, 198, 217, 0.359);
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+}
+
+/* Media Query for small screens (mobile) */
+@media (max-width: 600px) {
+    .header2 {
+        flex-flow: column wrap; /* Stacks divs vertically */
+        justify-content: center; /* Centers divs on small screens */
+        padding: 5px;
+    }
+    
+    .header2 div {
+        flex: 1 1 100%; /* Divs take full width on smaller screens */
+        margin: 5px 0; /* Adds margin between stacked divs */
+    }
+}
+
+/* Media Query for medium screens (tablets) */
+@media (min-width: 400px) and (max-width: 1024px) {
+    .header2 div {
+        flex: 1 1 25%; /* Divs take almost half of the width on tablets */
+        margin: 5px;
+    }
+}
+
+/* Media Query for large screens (desktops) */
+@media (min-width: 1025px) {
+    .header2 div {
+        flex: 1 1 10%; /* Divs take up a third of the width on larger screens */
+    }
+}
+
+
+
+
+
+
+
+
+.sidebar {
+    width:fit-content;
+    background-color: #e5d3d3;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+.sidebar div {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar div:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* .sidebar .closebtn {
+    position: absolute;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+} */
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 250px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 0;
+    }
+    #main {
+        margin-left: 0;
+    }
+}
